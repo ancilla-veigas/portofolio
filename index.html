@@ -32,10 +32,16 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle glass" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -58,8 +64,6 @@
                             class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/ancilla-veigas-4a106b31a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                         target="_blank" class="glass hover-glow"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/" target="_blank" class="glass hover-glow"><i
-                            class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div class="hero-image fade-in delay-1">
@@ -116,7 +120,7 @@
         </div>
         <div class="container skills-content">
             <div class="skills-column glass p-4 radius-lg slide-in-left">
-                <h3 class="column-title">Technical Expertise</h3>
+                <h3 class="column-title">Frontend Development</h3>
                 <div class="skill-box">
                     <div class="skill-info"><span>HTML5 & CSS3</span><span>95%</span></div>
                     <div class="skill-bar">
@@ -135,15 +139,30 @@
                         <div class="skill-progress" data-width="80%"></div>
                     </div>
                 </div>
+            </div>
+            <div class="skills-column glass p-4 radius-lg slide-in-center">
+                <h3 class="column-title">Backend & Tools</h3>
                 <div class="skill-box">
-                    <div class="skill-info"><span>C# & .NET</span><span>75%</span></div>
+                    <div class="skill-info"><span>PHP & MySQL</span><span>80%</span></div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-width="75%"></div>
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>Git & GitHub</span><span>90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info"><span>VS Code & Dev Tools</span><span>95%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%"></div>
                     </div>
                 </div>
             </div>
             <div class="skills-column glass p-4 radius-lg slide-in-right">
-                <h3 class="column-title">Professional Acumen</h3>
+                <h3 class="column-title">Professional Skills</h3>
                 <div class="skill-box">
                     <div class="skill-info"><span>UI/UX Design</span><span>85%</span></div>
                     <div class="skill-bar">
@@ -160,12 +179,6 @@
                     <div class="skill-info"><span>Problem Solving</span><span>90%</span></div>
                     <div class="skill-bar">
                         <div class="skill-progress" data-width="90%"></div>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-info"><span>Communication</span><span>95%</span></div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="95%"></div>
                     </div>
                 </div>
             </div>
@@ -229,55 +242,168 @@
             <h2 class="fade-in">Featured <span class="gradient-text">Projects</span></h2>
             <p class="fade-in delay-1">Explore my recent web development work.</p>
         </div>
+        <div class="container projects-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="qr">QR & Geo</button>
+            <button class="filter-btn" data-filter="backend">.NET & Backend</button>
+        </div>
         <div class="container projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card glass scale-in">
+            <!-- Project 1: Attendance Management -->
+            <div class="project-card glass scale-in" data-category="web qr">
                 <div class="project-img">
                     <img src="attendance.jpg" alt="Student Attendance Management System">
                     <div class="project-overlay">
-                        <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/ancillaveigas/attendance-system" target="_blank" class="view-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="view-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="project-info">
                     <h3>Attendance Management System</h3>
-                    <p>A web-based attendance system utilizing QR codes and geolocation for precise automatic student
-                        tracking.</p>
-                    <div class="project-tags">
-                        <span>Web</span> <span>Geolocation</span>
+                    <p>A web-based attendance system utilizing QR codes and geolocation for precise automatic student tracking. Features include QR code scanning, GPS verification, and real-time attendance tracking with Twilio SMS notifications.</p>
+                    <div class="project-tech">
+                        <span>QR Code API</span>
+                        <span>Geolocation</span>
+                        <span>Twilio</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ancillaveigas/attendance-system" target="_blank" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card glass scale-in delay-1">
+            <!-- Project 2: Canteen System -->
+            <div class="project-card glass scale-in delay-1" data-category="backend">
                 <div class="project-img">
                     <img src="canteen.jpg" alt="Canteen Order Management System">
                     <div class="project-overlay">
-                        <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/ancillaveigas/canteen-system" target="_blank" class="view-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="view-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3>Canteen Order System</h3>
-                    <p>Built a digital canteen ordering platform using C# and .NET to streamline campus food services
-                        seamlessly.</p>
-                    <div class="project-tags">
-                        <span>C#</span> <span>.NET</span>
+                    <h3>Canteen Order Management System</h3>
+                    <p>Built a digital canteen ordering platform using C# and .NET to streamline campus food services. Features include online ordering, payment processing, order tracking, and Admin dashboard for menu and order management.</p>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>.NET Framework</span>
+                        <span>SQL Server</span>
+                        <span>WinForms</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ancillaveigas/canteen-system" target="_blank" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
-            <!-- Project 3 -->
-            <div class="project-card glass scale-in delay-2">
+            <!-- Project 3: Internship Tracking -->
+            <div class="project-card glass scale-in delay-2" data-category="web">
                 <div class="project-img">
                     <img src="interntrack.jpg" alt="Internship Tracking System">
                     <div class="project-overlay">
-                        <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/ancillaveigas/internship-tracker" target="_blank" class="view-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="view-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="project-info">
                     <h3>Internship Tracking App</h3>
-                    <p>An Android application developed with Kotlin to efficiently coordinate and monitor student
-                        internship placements.</p>
-                    <div class="project-tags">
-                        <span>Android</span> <span>Kotlin</span>
+                    <p>An Android application developed with Kotlin to efficiently coordinate and monitor student internship placements. Includes features for tracking internships, progress reports, and mentor communications.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span>
+                        <span>Android</span>
+                        <span>Firebase</span>
+                        <span>Material Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ancillaveigas/internship-tracker" target="_blank" class="link-btn"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Features Section -->
+    <section id="features" class="features relative">
+        <div class="container section-title">
+            <h2 class="fade-in">Unique <span class="gradient-text">Features</span></h2>
+            <p class="fade-in delay-1">Interactive demonstrations and creative showcases</p>
+        </div>
+        <div class="container features-grid">
+            <!-- QR Code Demo -->
+            <div class="feature-card glass scale-in">
+                <div class="feature-header">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>QR Code Generator</h3>
+                </div>
+                <p>Experience the QR code integration used in my Attendance Management System</p>
+                <div class="qr-demo">
+                    <input type="text" id="qr-input" placeholder="Enter text to generate QR" class="qr-input">
+                    <button id="qr-generate" class="btn btn-small">Generate</button>
+                    <div id="qr-output" class="qr-output"></div>
+                </div>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="feature-card glass scale-in delay-1">
+                <div class="feature-header">
+                    <i class="fas fa-filter"></i>
+                    <h3>Project Filtering</h3>
+                </div>
+                <p>Explore my projects filtered by technology and category</p>
+                <div class="filter-demo">
+                    <p class="filter-info">Jump to the projects section to see the live filtering in action!</p>
+                    <a href="#projects" class="btn btn-primary btn-small">View Projects</a>
+                </div>
+            </div>
+
+            <!-- Dark Mode -->
+            <div class="feature-card glass scale-in delay-2">
+                <div class="feature-header">
+                    <i class="fas fa-paintbrush"></i>
+                    <h3>Theme Toggle</h3>
+                </div>
+                <p>Switch between dark and light themes seamlessly</p>
+                <div class="theme-demo">
+                    <p class="theme-info">Click the moon/sun icon in the navbar to toggle themes!</p>
+                    <button id="theme-demo-btn" class="btn btn-secondary btn-small">View Themes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Usage Disclosure Section -->
+    <section id="ai-disclosure" class="ai-disclosure relative">
+        <div class="container">
+            <div class="disclosure-card glass">
+                <div class="disclosure-header">
+                    <i class="fas fa-robot"></i>
+                    <h2>AI Tool Usage Disclosure</h2>
+                </div>
+                <div class="disclosure-content">
+                    <p><strong>Transparency Notice:</strong> This portfolio website was developed with the assistance of AI tools for the following purposes:</p>
+                    <div class="disclosure-grid">
+                        <div class="disclosure-item">
+                            <h4><i class="fas fa-pencil-alt"></i> UI/Design Ideas</h4>
+                            <p>AI assisted in brainstorming modern glassmorphism UI patterns and responsive design layouts</p>
+                        </div>
+                        <div class="disclosure-item">
+                            <h4><i class="fas fa-bug"></i> Debugging & Optimization</h4>
+                            <p>AI tools helped debug JavaScript functionality and optimize CSS performance for faster load times</p>
+                        </div>
+                        <div class="disclosure-item">
+                            <h4><i class="fas fa-keyboard"></i> Code Structuring</h4>
+                            <p>AI provided guidance on best practices for clean, maintainable, and scalable code structure</p>
+                        </div>
+                        <div class="disclosure-item">
+                            <h4><i class="fas fa-check"></i> Quality Assurance</h4>
+                            <p>AI assisted in testing cross-browser compatibility and ensuring WCAG accessibility standards</p>
+                        </div>
+                    </div>
+                    <div class="disclosure-footer">
+                        <p class="highlight">However, <strong>all the core concepts, project implementations, and technical solutions are entirely my own work</strong> as a BCA student. The AI was used as a development tool to enhance productivity and code quality, similar to using frameworks or libraries.</p>
+                        <p class="emphasis">This demonstrates my ability to effectively leverage modern development tools while maintaining creative control and technical understanding.</p>
                     </div>
                 </div>
             </div>
@@ -338,8 +464,6 @@
                         class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ancilla-veigas-4a106b31a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                     target="_blank" class="glass hover-glow"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/ancillaveigas" target="_blank" class="glass hover-glow"><i
-                        class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
