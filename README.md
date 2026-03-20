@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ancilla Veigas - Modern Portfolio Website
 
 A stunning, fully responsive personal portfolio website built with **vanilla HTML, CSS, and JavaScript** featuring glassmorphism design, dark/light mode toggle, project filtering, and interactive elements.
@@ -322,3 +323,8 @@ Feel free to fork this repository and customize it for your own portfolio!
 
 Last Updated: March 2026
 
+=======
+# portofolio
+my portofolio
+ancilla
+>>>>>>> 66b6d07e292a44d4da1d1a0aa07ee655ed370ab7
